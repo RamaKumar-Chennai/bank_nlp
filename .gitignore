@@ -33,6 +33,9 @@ venv/
 .DS_Store
 Thumbs.db
 
+
+.gradio
+
 #Project docs
 04_qa_pairs.json
 files
