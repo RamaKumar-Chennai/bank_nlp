@@ -1,0 +1,64 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Virtual environments ---
+venv/
+.env/
+
+# --- Jupyter/Colab ---
+.ipynb_checkpoints/
+
+# --- Logs ---
+*.log
+
+# --- Data files ---
+*.csv
+*.tsv
+*.json
+*.xlsx
+*.pickle
+
+# --- Model checkpoints ---
+*.pt
+*.pth
+*.h5
+
+# --- VS Code ---
+.vscode/
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+#Project docs
+04_qa_pairs.json
+files
+tickets.csv
+
+#Image file
+website_image.png 
+
+#model files
+encoder_model_final
+encoder_model_final_1 
+tokenizer_model_final   
+tokenizer_model_final_1
+sentiment_head_final.pt
+intent_head_final.pt  
+vector_emb
+encoder_model.pkl  
+
+
+faiss_index 
+
+#code files
+code1.py
+code2.py
+code3.py
+code4.ipynb
+code6.py
+help.ipynb
+
