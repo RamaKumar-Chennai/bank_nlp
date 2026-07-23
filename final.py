@@ -10,8 +10,9 @@ import gradio as gr
 from langchain_community.llms import Ollama
 
 # Step 1: Load and split text files
-txt_files = ["fraud_handling_policy.txt", "fraud_handling_policy.txt", "loan_processing_policy.txt", "refund_dispute_policy.txt"]
+txt_files = ["fraud_handling_policy.txt", "kyc_policy.txt", "loan_processing_policy.txt", "refund_dispute_policy.txt"]
 txt_docs = []
+
 for f in txt_files:
     loader = TextLoader(rf"D:\VS_CODE\INTEL-AIML\bank_nlp\files\{f}", encoding="utf-8")
     txt_docs.extend(loader.load())
@@ -227,7 +228,7 @@ with gr.Blocks() as demo:
     )
 
     # Tabs for NLP and Chatbot
-    with gr.Tab("🔹 NLP Part - Intent Classification"):
+    with gr.Tab("🔹 NLP Part - Intent and Sentiment Classification"):
       intent_input = gr.Textbox(label="Enter your query")
       intent_output = gr.Textbox(label="Detected Intent")
       sentiment_output = gr.Textbox(label="Detected Sentiment")
